@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,17 +6,22 @@
     font-size: 16px;
 }
 
-h1{
+h1 {
     font-size: 4rem;
     font-weight: 800;
 }
 
-h2{
+h2 {
     font-size: 3rem;
     font-weight: 800;
 }
 
-#header-container{
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#header-container {
     height: 100vh;
     padding: 2.5rem 7.5rem;
     background-image: url(../assets/background.png);
@@ -26,20 +31,31 @@ h2{
     justify-content: flex-start;
 }
 
-#header-div{
+#header-div {
     width: 41rem;
 }
 
-.container{
-    padding: 10rem 9.5rem;
+.container {
+    padding: 5rem 9.5rem;
     text-align: center;
 }
 
-#contact-container > p{
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.grid-item{
+    margin: 0.5rem;
+}
+
+#contact-container > p {
     margin-top: .5rem;
 }
 
-.button-contact{
+.button-contact {
     background-color: #F84646;
     font-size: 1rem;
     font-weight: 500;
@@ -49,4 +65,8 @@ h2{
     border: none;
     border-radius: .5rem;
     cursor: pointer;
+}
+
+.container-qualities > p{
+    margin-top: 2rem;
 }
