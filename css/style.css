@@ -21,6 +21,11 @@ h3 {
     font-weight: 800;
 }
 
+.background-red{
+    background-color: #F84646;
+    color: #fff;
+}
+
 #header-container {
     height: 100vh;
     padding: 2.5rem 7.5rem;
@@ -69,4 +74,15 @@ h3 {
 
 .container-qualities > p{
     margin-top: 2rem;
+}
+
+.container-services > p {
+    margin-top: .5rem;
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
 }
