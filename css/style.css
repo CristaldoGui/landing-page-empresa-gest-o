@@ -44,6 +44,10 @@ h3 {
     width: 41rem;
 }
 
+#header-div > p {
+    margin-top: 1rem;
+}
+
 .container {
     padding: 5rem 8rem;
     text-align: center;
@@ -78,6 +82,7 @@ h3 {
 
 .container-qualities > p{
     margin-top: 2rem;
+    padding: 0 15rem;
 }
 
 .container-services > p {
@@ -195,30 +200,112 @@ h3 {
     border-radius: .5rem;
 }
 
-.container-article > article {
-    display: flex;
-    flex-direction: row;
-}
-
 .article {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
-.container-article > article:nth-child(even) {
+.article-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 5rem;
+}
+
+.article-text > div > p {
+    margin-top: 2rem;
+    color: #808080;
+    line-height: 2rem;
+}
+
+.container-article > .article:nth-child(even) {
     flex-direction: row-reverse;
     margin-top: 8rem;
 
 }
 
-.container-article > article > .article-reverse {
+.container-article > .article-reverse > .article-text {
     margin: 0 0 0 5rem;
 }
 
-.article > p {
-    color: #808080;
-    margin-right: 5rem;
-    line-height: 2rem;
+.container-article > .article > img {
+    object-fit: cover;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    *{
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5rem 4rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-article {
+        padding: 5rem 5rem;
+    }
+
+    .container-qualities > p {
+        padding: 0 3rem;
+    }
+
+    .container-article > .article > img {
+        width: 50%;
+    }
+
+    .container-article > img:nth-child(even) {
+        width: 50%;
+    }
+
+
+    .grid-container-enterprises {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .enterprise-1 {
+        grid-area: auto;     
+    }
+    
+    .enterprise-2 {
+        grid-area: auto;
+    }
+    
+    .enterprise-3 {
+        grid-area: auto;
+    }
+    
+    .enterprise-4 {
+        grid-area: auto;
+    }
+    
+    .enterprise-5 {
+        grid-area: auto;
+    }
+    
+    .enterprise-6 {
+        grid-area: auto;
+    }
+    
+    .enterprise-7 {
+        grid-area: auto;
+    }
+    
+    .enterprise-8 {
+        grid-area: auto;
+    }
+    
+    .enterprise-9 {
+        grid-area: auto;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px){
+    
 }
