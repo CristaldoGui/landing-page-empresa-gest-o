@@ -6,6 +6,10 @@
     font-size: 14px;
 }
 
+p {
+    line-height: 2rem;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -176,3 +180,45 @@ h3 {
     grid-area: 3 / 5;
 }
 
+.container-article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 8rem 10rem;
+}
+
+.container-article > article > div > button {
+    background-color: #F84646;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.container-article > article {
+    display: flex;
+    flex-direction: row;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-article > article:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-top: 8rem;
+
+}
+
+.container-article > article > .article-reverse {
+    margin: 0 0 0 5rem;
+}
+
+.article > p {
+    color: #808080;
+    margin-right: 5rem;
+    line-height: 2rem;
+}
