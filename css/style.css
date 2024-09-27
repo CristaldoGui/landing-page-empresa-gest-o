@@ -321,12 +321,7 @@ button:hover {
     }
 
     #header-container {
-        height: 100vh;
-        padding: 2.5rem 7.5rem;
-        background-image: url(../assets/background.png);
-        background-size: cover;
-        display: flex;
-        align-items: center;
+        padding: 1rem 3rem;
         justify-content: center;
         text-align: center;
     }
@@ -402,8 +397,6 @@ button:hover {
     .grid-container-enterprises {
         grid-template-columns: 1fr;  
         align-items: center;
-        padding: 0 15rem;
-        gap: 2rem;
     }
 
     .grid-enterprise-item {
